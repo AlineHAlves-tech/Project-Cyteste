@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-12-27T05:05:38.625Z",
+    "end": "2024-12-27T05:05:44.892Z",
+    "duration": 6267,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d9a5497f-71c9-409f-8e01-d02b243143ab",
+      "title": "",
+      "fullFile": "cypress\\e2e\\login_incorreto.cy.js",
+      "file": "cypress\\e2e\\login_incorreto.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "608298bd-fa2f-4dc8-bd88-03b602fdc5c7",
+          "title": "Página de login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve clicar no botão de entrar e deve aparecer mensagem de erro",
+              "fullTitle": "Página de login Deve clicar no botão de entrar e deve aparecer mensagem de erro",
+              "timedOut": null,
+              "duration": 2218,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"submit-button\"]').click();\ncy.contains('É necessário informar um endereço de email').should('be.visible');\ncy.contains('Insira sua senha').should('be.visible');",
+              "err": {},
+              "uuid": "ea131060-c8e4-4478-9a75-dc7fee22dea1",
+              "parentUUID": "608298bd-fa2f-4dc8-bd88-03b602fdc5c7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deve preencher os campos do login incorretamente e exibir mensagens de erro ao usuário na página",
+              "fullTitle": "Página de login Deve preencher os campos do login incorretamente e exibir mensagens de erro ao usuário na página",
+              "timedOut": null,
+              "duration": 2123,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"input-loginEmail\"]').type('marjorie3');\ncy.get('[data-test=\"input-loginPassword\"]').type('123');\ncy.get('[data-test=\"submit-button\"]').click();\ncy.contains('Por favor, verifique o email digitado').should('be.visible');\ncy.contains('A senha deve conter pelo menos uma letra maiúscula, um número e ter entre 6 e 15 caracteres').should('be.visible');",
+              "err": {},
+              "uuid": "bd066102-cd35-4bae-b714-0e4abec825d8",
+              "parentUUID": "608298bd-fa2f-4dc8-bd88-03b602fdc5c7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ea131060-c8e4-4478-9a75-dc7fee22dea1",
+            "bd066102-cd35-4bae-b714-0e4abec825d8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4341,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

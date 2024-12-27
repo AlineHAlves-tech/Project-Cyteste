@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-12-27T05:05:20.736Z",
+    "end": "2024-12-27T05:05:26.998Z",
+    "duration": 6262,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e8c0393f-a3ec-4176-af3d-46581cab9c73",
+      "title": "",
+      "fullFile": "cypress\\e2e\\cadastro_incorreto.cy.js",
+      "file": "cypress\\e2e\\cadastro_incorreto.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ffae7c12-f2cb-48ea-9db2-04ad0eed3cc7",
+          "title": "Página de Cadastro",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve clicar no botão cadastrar sem ter inserido nenhum dado",
+              "fullTitle": "Página de Cadastro Deve clicar no botão cadastrar sem ter inserido nenhum dado",
+              "timedOut": null,
+              "duration": 1417,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"submit-button\"]').click();\ncy.contains('É necessário informar um endereço de email').should('be.visible');\ncy.contains('Crie uma senha').should('be.visible');\ncy.contains('Repita a senha criada acima').should('be.visible');",
+              "err": {},
+              "uuid": "6559b077-449b-43eb-9f77-102770d4669b",
+              "parentUUID": "ffae7c12-f2cb-48ea-9db2-04ad0eed3cc7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deve preencher os campos do formulário incorretamente para cadastrar um novo usuário",
+              "fullTitle": "Página de Cadastro Deve preencher os campos do formulário incorretamente para cadastrar um novo usuário",
+              "timedOut": null,
+              "duration": 2860,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"input-name\"]').type('Marjorie Estiano');\ncy.get('[data-test=\"input-email\"]').type('marjorie2@email.com');\ncy.get('[data-test=\"input-password\"]').type('Senha123');\ncy.get('[data-test=\"input-confirm-password\"]').type('Senha123');\ncy.get('[data-test=\"submit-button\"]').click();",
+              "err": {},
+              "uuid": "b0630549-db3f-4bf9-8583-a76f6bd32ff8",
+              "parentUUID": "ffae7c12-f2cb-48ea-9db2-04ad0eed3cc7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6559b077-449b-43eb-9f77-102770d4669b",
+            "b0630549-db3f-4bf9-8583-a76f6bd32ff8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4277,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

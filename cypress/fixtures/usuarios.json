@@ -1,0 +1,54 @@
+{
+    "usuarios": [
+  {
+    "name": "Alice Silva",
+    "email": "alice.silva@example.com",
+    "password": "password123"
+  },
+  {
+    "name": "Bruno Souza",
+    "email": "bruno.souza@example.com.br",
+    "password": "securePass456"
+  },
+  {
+    "name": "Carla Pereira",
+    "email": "carla.pereira@example.com",
+    "password": "myPass789"
+  },
+  {
+    "name": "Daniel Santos",
+    "email": "daniel.santos@example.com",
+    "password": "daniel@2024"
+  },
+  {
+    "name": "Eduarda Lima",
+    "email": "eduarda.lima@example.com.br",
+    "password": "eduPass321"
+  },
+  {
+    "name": "Felipe Costa",
+    "email": "felipe.costa@example.com",
+    "password": "felipe#123"
+  },
+  {
+    "name": "Gabriela Rocha",
+    "email": "gabriela.rocha@example.com",
+    "password": "gabiPass789"
+  },
+  {
+    "name": "Henrique Almeida",
+    "email": "henrique.almeida@example.com",
+    "password": "henri2024"
+  },
+  {
+    "name": "Isabela Martins",
+    "email": "isabela.martins@example.com",
+    "password": "isa@secure"
+  },
+  {
+    "name": "João Mendes",
+    "email": "joao.mendes@example.com",
+    "password": "joaoPass123"
+  }
+]
+}

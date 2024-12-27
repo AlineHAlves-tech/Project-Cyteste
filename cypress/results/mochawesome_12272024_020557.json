@@ -1,0 +1,222 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-12-27T05:05:49.168Z",
+    "end": "2024-12-27T05:05:57.879Z",
+    "duration": 8711,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "83312d97-8441-4f93-9cfa-76912535c45b",
+      "title": "",
+      "fullFile": "cypress\\e2e\\page_Complete.cy.js",
+      "file": "cypress\\e2e\\page_Complete.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "bc4efecc-075f-40e6-bda5-c8f577923449",
+          "title": "Cadastro - Adopet Alura",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve preencher e enviar o formulário de cadastro",
+              "fullTitle": "Cadastro - Adopet Alura Deve preencher e enviar o formulário de cadastro",
+              "timedOut": null,
+              "duration": 2877,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "acessarPaginaDecadastro();\ncy.get('[data-test=\"input-name\"]').type('Aline');\ncy.get('[data-test=\"input-email\"]').type('aline@gmail.com');\ncy.get('[data-test=\"input-password\"]').type('12Al34');\ncy.get('[data-test=\"input-confirm-password\"]').type('12Al34');\ncy.get('[data-test=\"submit-button\"]').click();",
+              "err": {},
+              "uuid": "47293eaa-b7f3-46eb-9da8-7f9c00d129ab",
+              "parentUUID": "bc4efecc-075f-40e6-bda5-c8f577923449",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "47293eaa-b7f3-46eb-9da8-7f9c00d129ab"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2877,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "df453443-e06a-42a7-a496-48dcc8260659",
+          "title": "Login - Adopet Alura",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve preencher formulário de login",
+              "fullTitle": "Login - Adopet Alura Deve preencher formulário de login",
+              "timedOut": null,
+              "duration": 1692,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "acessarPaginaDeLogin();\ncy.get('input[name=\"email\"]').type('aline@gmail.com');\ncy.get('input[name=\"password\"]').type('12Al34');\ncy.contains('button', 'Entrar').click();",
+              "err": {},
+              "uuid": "4349d78e-be0f-4df8-9914-775228a1f411",
+              "parentUUID": "df453443-e06a-42a7-a496-48dcc8260659",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4349d78e-be0f-4df8-9914-775228a1f411"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1692,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "6e1ba31d-6664-43df-8cc4-d5587428feb9",
+          "title": "Ver pets para adoção",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve acessar  a página corretamente e clicar no botão \"Ver pets disponíveis para adoção\"",
+              "fullTitle": "Ver pets para adoção Deve acessar  a página corretamente e clicar no botão \"Ver pets disponíveis para adoção\"",
+              "timedOut": null,
+              "duration": 778,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://adopet-frontend-cypress.vercel.app/');\ncy.contains('a', 'Ver pets disponíveis para adoção').click();",
+              "err": {},
+              "uuid": "9550c553-dfd2-43e9-ae3d-3537e2a16e97",
+              "parentUUID": "6e1ba31d-6664-43df-8cc4-d5587428feb9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deve validar o botão clique no icone de casa",
+              "fullTitle": "Ver pets para adoção Deve validar o botão clique no icone de casa",
+              "timedOut": null,
+              "duration": 632,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://adopet-frontend-cypress.vercel.app/');\ncy.get('.header__home').click();",
+              "err": {},
+              "uuid": "b912d57e-6230-4c47-9eca-9e84de7c8243",
+              "parentUUID": "6e1ba31d-6664-43df-8cc4-d5587428feb9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Visita a página de /home do AdoPet e clique no ícone de carta",
+              "fullTitle": "Ver pets para adoção Visita a página de /home do AdoPet e clique no ícone de carta",
+              "timedOut": null,
+              "duration": 382,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://adopet-frontend-cypress.vercel.app/home');\ncy.get('.header__message').click();",
+              "err": {},
+              "uuid": "de622c11-02b8-4ea5-896f-1b106f81c594",
+              "parentUUID": "6e1ba31d-6664-43df-8cc4-d5587428feb9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9550c553-dfd2-43e9-ae3d-3537e2a16e97",
+            "b912d57e-6230-4c47-9eca-9e84de7c8243",
+            "de622c11-02b8-4ea5-896f-1b106f81c594"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1792,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

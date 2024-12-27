@@ -1,0 +1,144 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-12-27T05:05:09.142Z",
+    "end": "2024-12-27T05:05:16.836Z",
+    "duration": 7694,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0a9b8fc1-3d59-4578-a5d1-66199b484304",
+      "title": "",
+      "fullFile": "cypress\\e2e\\cadastro_correto.cy.js",
+      "file": "cypress\\e2e\\cadastro_correto.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3739f5bd-a4c2-434d-8781-168a604764f0",
+          "title": "Página de cadastro",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Fazer login com sucesso no Adopet",
+              "fullTitle": "Página de cadastro Fazer login com sucesso no Adopet",
+              "timedOut": null,
+              "duration": 3371,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.cadastro('Aline', 'aline@gmail.com', '12Al34', '12Al34');",
+              "err": {},
+              "uuid": "faa26c60-e10e-46df-9b04-1bb856d860ea",
+              "parentUUID": "3739f5bd-a4c2-434d-8781-168a604764f0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deve identificar se o title Adopet está presente no html",
+              "fullTitle": "Página de cadastro Deve identificar se o title Adopet está presente no html",
+              "timedOut": null,
+              "duration": 1024,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.register > img').should('be.visible');",
+              "err": {},
+              "uuid": "eb072718-36c6-4eee-9c91-8a2c9662c2d4",
+              "parentUUID": "3739f5bd-a4c2-434d-8781-168a604764f0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deve identificar a frase \"Quem ama adota\"",
+              "fullTitle": "Página de cadastro Deve identificar a frase \"Quem ama adota\"",
+              "timedOut": null,
+              "duration": 898,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('p', 'Quem ama adota').should('be.visible');",
+              "err": {},
+              "uuid": "266261ac-b11c-44ee-b64f-9dbf7086fcc3",
+              "parentUUID": "3739f5bd-a4c2-434d-8781-168a604764f0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "faa26c60-e10e-46df-9b04-1bb856d860ea",
+            "eb072718-36c6-4eee-9c91-8a2c9662c2d4",
+            "266261ac-b11c-44ee-b64f-9dbf7086fcc3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5293,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
