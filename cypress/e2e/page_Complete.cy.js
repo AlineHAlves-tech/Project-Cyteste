@@ -37,12 +37,12 @@ describe('Ver pets para adoção', () =>{
   it('Deve validar o botão clique no icone de casa', () =>{
     cy.visit('https://adopet-frontend-cypress.vercel.app/');
     cy.get('.header__home').click()
-  })
+  });
 
   it("Visita a página de /home do AdoPet e clique no ícone de carta", ()=>{
     cy.visit('https://adopet-frontend-cypress.vercel.app/home');
     cy.get('.header__message').click()  
-  })
+  });
   
 });
 

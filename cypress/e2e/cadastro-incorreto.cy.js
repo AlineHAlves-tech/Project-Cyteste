@@ -2,7 +2,7 @@ describe('Página de Cadastro', () => {
     beforeEach(() => {
         cy.visit('https://adopet-frontend-cypress.vercel.app/');
         cy.get('[data-test="register-button"]').click();
-    })
+    });
     
     it('Deve clicar no botão cadastrar sem ter inserido nenhum dado', () => {
         cy.get('[data-test="submit-button"]').click();
@@ -17,6 +17,6 @@ describe('Página de Cadastro', () => {
         cy.get('[data-test="input-password"]').type('Senha123');
         cy.get('[data-test="input-confirm-password"]').type('Senha123');
         cy.get('[data-test="submit-button"]').click();
-    })
+    });
 
 });

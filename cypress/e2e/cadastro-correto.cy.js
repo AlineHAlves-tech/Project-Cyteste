@@ -1,10 +1,12 @@
+import '../support/cadastro-commands'
+
 describe('Página de cadastro', () =>{
     beforeEach(() => {
         cy.visit('https://adopet-frontend-cypress.vercel.app/');
         cy.get('[data-test="register-button"]').click();
     });
 
-    it('Fazer login com sucesso no Adopet', () =>{
+    it('Fazer cadastro com sucesso no Adopet', () =>{
         cy.cadastro('Aline', 'aline@gmail.com', '12Al34', '12Al34');
     });
     
