@@ -1,6 +1,7 @@
 node_modules
 cypress.env.json
 
-#Ignorar o diretório específico
+#Ignorar 
 results/
 screenshots/
+roteiro.md
