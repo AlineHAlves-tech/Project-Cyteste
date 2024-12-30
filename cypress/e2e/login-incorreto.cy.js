@@ -1,3 +1,5 @@
+import '../support/login-commands.js'
+
 describe('Página de login', () => {
     beforeEach(() => {
         cy.visit('https://adopet-frontend-cypress.vercel.app');

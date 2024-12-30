@@ -1,4 +1,4 @@
-import '../support/login-correto-commands.js.js'
+import '../support/login-commands.js'
 
 describe('Página de Login', () => {
     beforeEach(() => {
