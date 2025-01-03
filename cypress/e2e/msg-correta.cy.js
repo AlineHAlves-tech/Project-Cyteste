@@ -1,4 +1,4 @@
-import '../support/login-commands.js'
+import '../support/login-commands.js.js'
 
 describe('Falar com o Responsável', () =>{
     beforeEach(() => {
@@ -12,7 +12,7 @@ describe('Falar com o Responsável', () =>{
         cy.get(':nth-child(2) > .card__contact').click();
     });
 
-    it.only('Deve enviar uma mensagem para o responsável', () =>{
+    it('Deve enviar uma mensagem para o responsável', () =>{
         cy.login('aline@gmail.com', '12Al34');
         cy.contains('Felícia').should('be.visible');
         cy.get(':nth-child(3) > .card__contact').click();

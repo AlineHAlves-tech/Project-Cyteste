@@ -15,6 +15,7 @@ module.exports = defineConfig({
       timestamp: "mmddyyyy_HHMMss" }
   },
   defaultCommandTimeout: 10000,
+  screenshotOnRunFailure: false,
 });
 
 
